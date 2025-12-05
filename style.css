@@ -227,6 +227,20 @@
       width: 100%;
       box-sizing: border-box;
     }
+    .video-container {
+      margin-bottom: 1.5rem;
+    }
+    .video-container video {
+      width: 100%;
+      border-radius: 8px;
+      background: var(--gray05);
+    }
+    .video-caption {
+      margin-top: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--gray60);
+      text-align: center;
+    }
     section {
       background: var(--white);
       padding: 2.5rem;

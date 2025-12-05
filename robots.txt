@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gereonwildermann.github.io/sitemap.xml
+Sitemap: https://githubmayankgupta.github.io/sitemap.xml
