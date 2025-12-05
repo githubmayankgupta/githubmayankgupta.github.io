@@ -6,6 +6,9 @@
   --pale: #b2d8f7;
   --gray60: #5b6c7d;
   --gray05: #dbeaf4;
+  --green: #0f7acb;
+  --gray80: #3b4150;
+  --blue: #4a83c5;
   --nav-height: 76px;
   --nav-padding-inline: clamp(1rem, 3vw, 2.75rem);
   --menu-font-size: 1.3rem;
@@ -295,6 +298,172 @@ body {
       color: var(--ink);
       font-weight: 600;
       margin-bottom: 0.5rem;
+    }
+    .download-bib {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      padding: 0.65rem 1.2rem;
+      border-radius: 999px;
+      background: var(--ink);
+      color: var(--white);
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .download-bib:hover {
+      transform: translateY(-1px);
+      background: var(--blue);
+    }
+
+    .research-page {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-bottom: 3rem;
+    }
+
+    .research-hero {
+      position: relative;
+      min-height: 360px;
+      border-radius: 18px;
+      overflow: hidden;
+      margin: 0 auto;
+      width: min(1200px, 100% - 2rem);
+      background: var(--ink);
+      color: var(--white);
+      box-shadow: 0 20px 45px rgba(15, 76, 129, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .research-hero-media {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(135deg, rgba(11, 38, 59, 0.7), rgba(15, 76, 129, 0.8)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .research-hero-copy {
+      position: relative;
+      padding: clamp(2rem, 4vw, 3rem);
+      text-align: center;
+      max-width: 720px;
+      z-index: 1;
+    }
+    .research-eyebrow {
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .research-hero h1 {
+      font-size: clamp(2.4rem, 4vw, 3rem);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .research-hero p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .research-content {
+      width: min(1100px, 100% - 3rem);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .research-card {
+      background: var(--white);
+      padding: clamp(1.75rem, 4vw, 2.5rem);
+      border-radius: 16px;
+      border: 1px solid rgba(15, 76, 129, 0.08);
+      box-shadow: 0 18px 40px rgba(11, 38, 59, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .research-interest {
+      display: grid;
+      grid-template-columns: minmax(280px, 1fr) 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .research-interest figure,
+    .ongoing-item figure {
+      margin: 0;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(11, 38, 59, 0.1);
+    }
+    .research-interest figure img,
+    .ongoing-item figure img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      max-height: 320px;
+    }
+    .research-interest figure figcaption,
+    .ongoing-item figure figcaption {
+      font-size: 0.85rem;
+      color: var(--gray60);
+      padding: 0.6rem 0.75rem;
+      background: #fdfdfd;
+    }
+    .research-ongoing .research-section-header h2 {
+      margin-bottom: 0.25rem;
+    }
+    .research-section-header p {
+      color: var(--gray60);
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .ongoing-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .ongoing-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 1.75rem;
+      align-items: center;
+    }
+    .ongoing-item h3 {
+      margin: 0 0 0.6rem;
+      font-size: 1.3rem;
+      color: var(--ink);
+    }
+    .ongoing-item-copy p {
+      margin: 0;
+      line-height: 1.7;
+      color: var(--gray80);
+    }
+
+    @media (max-width: 900px) {
+      .research-hero {
+        min-height: 320px;
+      }
+      .research-interest {
+        grid-template-columns: 1fr;
+      }
+      .ongoing-item {
+        grid-template-columns: 1fr;
+      }
+      .research-content {
+        width: 100%;
+      }
+      .research-hero-copy {
+        padding: 2rem;
+      }
     }
     @media (max-width: 900px) {
       .hero-layout {

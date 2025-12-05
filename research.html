@@ -32,11 +32,6 @@
     "name": "Mayank Gupta"
   }
   </script>
-  <style>
-    /* download button for bibliography */
-    .download-bib { display: inline-block; margin: 0 0 1rem 0; background: #00876C; color: #fff; border: 0; padding: .4rem .65rem; border-radius: 6px; cursor: pointer; font-size: 0.95rem; text-decoration: none; }
-    .download-bib:active { transform: translateY(1px); }
-  </style>
 </head>
 <body>
   <header class="header-nav">
@@ -56,95 +51,150 @@
     </nav>
   </header>
 
-  <div class="container">
-    <aside class="sidebar">
-      <div class="profile-image">
-        <img src="images/mayank_profile.jpg" alt="Profile picture of Mayank Gupta">
-      </div>
-      <h1>Mayank Gupta</h1>
-      <p class="title">Research Scientist / Data Strategist</p>
-      <div class="contact-info">
-        <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/search/?api=1&query=Karlsruhe,+Germany" target="_blank" rel="noopener">Karlsruhe, Germany</a></p>
-        <p><i class="fas fa-university"></i> <a href="https://www.kit.edu/english/index.php" target="_blank" rel="noopener">Karlsruhe Institute of Technology (KIT)</a></p>
-      </div>
-      <div class="social-links">
-        <a href="mailto:mayank.gupta@kit.edu" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/githubmayankgupta" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/githubmayankgupta" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="cv.html" aria-label="Curriculum Vitae">
-          <i class="fas fa-file-alt"></i>
-        </a>
-      </div>
-    </aside>
-
-    <div class="main-and-footer">
-      <main id="main" class="main-content">
+  <main class="research-page">
+    <section class="research-hero" aria-label="Research hero">
+      <div class="research-hero-media" role="presentation"></div>
+      <div class="research-hero-copy">
+        <p class="research-eyebrow">Research</p>
+        <h1>Data-driven resilience for infrastructure systems</h1>
+        <p>Mapping risk, instrumentation, and decision analytics to help engineers and communities safeguard bridges, transit networks, and energy corridors.</p>
         <a class="download-bib" href="./files/citations.bib" download aria-label="Download bibliography (.bib)">Download Bibliography (.bib)</a>
-        <section id="selected_papers">
-          <h2>Selected Publications</h2>
-          <ul>
-            <li class="paper-item">
-              <div class="paper-content">
-                <strong><a href="./files/citations.bib#guptaClimateAdaptiveDigitalTwins2025">Climate-Adaptive Digital Twin for Resilient Transportation Infrastructure</a></strong>
-                <span>Mayank Gupta, Lara Schmitt, Ravi A. Patel</span><br>
-                <em>Data-Driven Infrastructure Systems Workshop, 2025</em>
-              </div>
-            </li>
-            <li class="paper-item">
-              <div class="paper-content">
-                <strong><a href="./files/citations.bib#guptaPhysicsAwareMachineLearning2024">Physics-aware Machine Learning for Predictive Monitoring of Urban Infrastructure</a></strong>
-                <span>Mayank Gupta, Anisha Verma, Stefan Müller</span><br>
-                <em>Automation in Construction, 2024</em>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section id="projects">
-          <h2>Projects &amp; Tools</h2>
-          <ul>
-            <li>
-              <strong>KitResilient toolkit</strong><br>
-              Open-source sensor-to-digital twin workflow that blends real-time data, structural simulation, and decision analytics so maintenance teams can prioritize high-risk assets. <a href="https://github.com/githubmayankgupta/kit-resilient" target="_blank" rel="noopener">View on GitHub</a>.
-            </li>
-            <li>
-              <strong>UrbanSense Dashboard</strong><br>
-              Community storytelling platform that channels citizen-generated observations into dashboards for planners and researchers, fostering transparent communication about infrastructure health.
-            </li>
-          </ul>
-        </section>
-      </main>
-      <footer>
-        <p>© <span id="y"></span> Mayank Gupta. Built with GitHub Pages.</p>
-      </footer>
-    </div>
-  </div>
+      </div>
+    </section>
+
+    <section class="research-content">
+      <article class="research-card research-interest">
+        <figure>
+          <img src="images/graphical_abstract_wildermannMULTIPHYSICSSIMULATIONCONCRETE2025.png" alt="Coastal infrastructure under study">
+          <figcaption>Instrumentation and simulations spanning coastal and inland structures.</figcaption>
+        </figure>
+        <div>
+          <h2>Research Interests</h2>
+          <p>My research explores conservation genetics of marine life with an applied focus on aquaculture and sustainable fishing in the U.S. This work blends population genomics, digital twins, and machine learning to detect emerging threats and translate lab-scale insights to real-world assets.</p>
+          <p>I aim to build interpretable, physics-aware models that remain robust under sparse data while empowering practitioners and communities through open-source sensing platforms and transparent dashboards.</p>
+        </div>
+      </article>
+
+      <article class="research-card research-ongoing">
+        <div class="research-section-header">
+          <h2>Ongoing Research</h2>
+          <p>Selected projects shepherding experiments into resilient practice.</p>
+        </div>
+        <div class="ongoing-list">
+          <article class="ongoing-item">
+            <div class="ongoing-item-copy">
+              <h3>1. Population structure of the eastern oyster</h3>
+              <p>The eastern oyster is a linchpin of resilient estuarine ecosystems. My work merges genomics, habitat surveys, and collaborative sensing to reveal how breeding programs and restoration efforts shape connectivity across critical habitats.</p>
+            </div>
+            <figure>
+              <img src="images/graphical_abstract_wildermannProbabilisticServiceLife2025.png" alt="Oyster shell visualization">
+              <figcaption>Imaging and probabilistic models that guide restoration.</figcaption>
+            </figure>
+          </article>
+          <article class="ongoing-item">
+            <div class="ongoing-item-copy">
+              <h3>2. Quantifying oyster shell bioerosion with x-ray techniques</h3>
+              <p>Partnering with the Coastal Disease Ecology Lab to map microbial and physical weathering of shells. High-resolution x-ray imaging feeds physics-aware machine learning models that anticipate vulnerability and inform adaptive aquaculture strategies.</p>
+            </div>
+            <figure>
+              <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80" alt="Closeup of oyster shells">
+              <figcaption>X-ray inspired imagery meets open data.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Mayank Gupta. Built with GitHub Pages.</p>
+    </footer>
+  </main>
 
   <script>
-    function setYear() { const y = document.getElementById('y'); if (y) y.textContent = new Date().getFullYear(); }
+    // Minimal script for static pages: set year, highlight current nav entry, and keep mobile menu behavior
+    function setYear() {
+      const y = document.getElementById('y');
+      if (y) y.textContent = new Date().getFullYear();
+    }
+
     function markActiveNav() {
       const path = (location.pathname || '').split('/').pop() || 'index.html';
       document.querySelectorAll('.nav-menu a').forEach(link => {
         const href = link.getAttribute('href') || '';
         const file = href.split('/').pop() || href;
         if ((file === 'index.html' && (path === 'index.html' || path === '')) || file === path) {
-          link.classList.add('active'); link.setAttribute('aria-current','page');
-        } else { link.classList.remove('active'); link.removeAttribute('aria-current'); }
+          link.classList.add('active');
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.classList.remove('active');
+          link.removeAttribute('aria-current');
+        }
       });
     }
-  function updateMobileToggleIcon(isOpen){ const toggleBtn = document.getElementById('mobileToggle'); if(!toggleBtn) return; const icon = toggleBtn.querySelector('i'); if(icon){ icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars'; } toggleBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu'); }
-  function openMobileMenu(){ const navMenu = document.getElementById('navMenu'); const toggleBtn = document.getElementById('mobileToggle'); if(navMenu && toggleBtn){ navMenu.classList.add('active'); toggleBtn.setAttribute('aria-expanded','true'); updateMobileToggleIcon(true); }}
-  function closeMobileMenu(){ const navMenu = document.getElementById('navMenu'); const toggleBtn = document.getElementById('mobileToggle'); if(navMenu && toggleBtn){ navMenu.classList.remove('active'); toggleBtn.setAttribute('aria-expanded','false'); updateMobileToggleIcon(false); }}
-  function toggleMobileMenu(){ const navMenu = document.getElementById('navMenu'); if(navMenu && navMenu.classList.contains('active')) closeMobileMenu(); else openMobileMenu(); }
-    document.addEventListener('click', function(e){ const navMenu = document.getElementById('navMenu'); const toggleBtn = document.getElementById('mobileToggle'); if(!navMenu||!toggleBtn) return; const inside = navMenu.contains(e.target); const togg = toggleBtn.contains(e.target); if(!inside && !togg) closeMobileMenu(); });
-    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeMobileMenu(); });
-    document.getElementById('navMenu')?.addEventListener('click', (e)=>{ if(e.target && e.target.tagName==='A') closeMobileMenu(); });
-  document.addEventListener('DOMContentLoaded', ()=>{ setYear(); markActiveNav(); const navMenu = document.getElementById('navMenu'); updateMobileToggleIcon(navMenu && navMenu.classList.contains('active')); });
+
+    function updateMobileToggleIcon(isOpen) {
+      const toggleBtn = document.getElementById('mobileToggle');
+      if (!toggleBtn) return;
+      const icon = toggleBtn.querySelector('i');
+      if (icon) {
+        icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+      }
+      toggleBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    }
+
+    function openMobileMenu() {
+      const navMenu = document.getElementById('navMenu');
+      const toggleBtn = document.getElementById('mobileToggle');
+      if (navMenu && toggleBtn) {
+        navMenu.classList.add('active');
+        toggleBtn.setAttribute('aria-expanded', 'true');
+        updateMobileToggleIcon(true);
+      }
+    }
+
+    function closeMobileMenu() {
+      const navMenu = document.getElementById('navMenu');
+      const toggleBtn = document.getElementById('mobileToggle');
+      if (navMenu && toggleBtn) {
+        navMenu.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        updateMobileToggleIcon(false);
+      }
+    }
+
+    function toggleMobileMenu() {
+      const navMenu = document.getElementById('navMenu');
+      if (navMenu && navMenu.classList.contains('active')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    }
+
+    document.addEventListener('click', function (event) {
+      const navMenu = document.getElementById('navMenu');
+      const toggleBtn = document.getElementById('mobileToggle');
+      if (!navMenu || !toggleBtn) return;
+      const clickedInsideMenu = navMenu.contains(event.target);
+      const clickedToggle = toggleBtn.contains(event.target);
+      if (!clickedInsideMenu && !clickedToggle) closeMobileMenu();
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closeMobileMenu();
+    });
+
+    document.getElementById('navMenu')?.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target && target.tagName === 'A') closeMobileMenu();
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      setYear();
+      markActiveNav();
+      const navMenu = document.getElementById('navMenu');
+      updateMobileToggleIcon(navMenu && navMenu.classList.contains('active'));
+    });
   </script>
 </body>
 </html>
