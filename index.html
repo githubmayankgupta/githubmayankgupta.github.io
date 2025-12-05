@@ -81,71 +81,61 @@
     </nav>
   </header>
 
-  <div class="container home-layout">
-
-  <div class="main-and-footer">
-      <main id="main" class="main-content">
-        <!-- Home Page -->
-        <div id="home" class="page active">
-          <section class="hero">
-            <strong class="hero-welcome">Welcome to my website!</strong>
-            <div class="hero-layout">
-              <div class="hero-photo-stack">
-                <img src="images/mayank_profile.jpg" alt="Mayank Gupta" class="hero-photo">
-                <p class="hero-name">Mayank Gupta</p>
-              </div>
-              <div class="hero-copy">
-                <p class="hero-tagline">Research scientist at KIT crafting data-driven resilience strategies for infrastructure through digital twins, machine learning, and collaborative sensing.</p>
-                <p>My work blends physics-based simulation, machine learning, and open data practices to detect emerging risks, support maintenance prioritization, and translate insights from laboratories to real-world assets.</p>
-                <p>Alongside research, I design collaborative sensing platforms and open-source tools that invite engineers and communities to co-create resilient systems.</p>
-              </div>
-            </div>
-          </section>
-          <div class="bio">
-            <p>Mayank Gupta is a research scientist at the <a href="https://www.kit.edu/english/index.php" target="_blank" rel="noopener"><em>Karlsruhe Institute of Technology</em></a>, where he develops data-driven strategies that bring together digital twins, sensor networks, and resilience planning for critical civil infrastructure.</p>
-            <p>His work blends physics-based simulation, machine learning, and open data practices to detect emerging risks, support maintenance prioritization, and translate insights from laboratories to real-world assets.</p>
-          </div>
-          <section>
-            <h2>Research Focus</h2>
-            <ul>
-              <li>Climate-adaptive digital twins that steer resilient decisions for transportation and energy corridors.</li>
-              <li>Physics-aware machine learning models that retain interpretability under sparse instrumentation.</li>
-              <li>Community-centered sensing platforms and open-source tools that invite collaboration across engineering teams.</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Recent Highlights</h2>
-            <ul>
-              <li>
-                <strong><a href="research.html#selected_papers">Climate-Adaptive Digital Twin for Resilient Transportation Infrastructure</a></strong><br>
-                <span>Mayank Gupta, Lara Schmitt, Ravi A. Patel</span><br>
-                <em>Data-Driven Infrastructure Systems Workshop, 2025</em>
-              </li>
-              <li>
-                <strong><a href="research.html#selected_papers">Physics-aware Machine Learning for Predictive Monitoring of Urban Infrastructure</a></strong><br>
-                <span>Mayank Gupta, Anisha Verma, Stefan Müller</span><br>
-                <em>Automation in Construction, 2024</em>
-              </li>
-            </ul>
-            <p>Explore more publications and datasets on the <a href="research.html">Research page</a>.</p>
-          </section>
-          <div class="video-container">
-            <video id="hoverVideo" loop muted playsinline>
-              <!-- Chrome / Firefox / Edge -->
-              <source src="videos/bending_beam.webm" type="video/webm; codecs=vp9">
-              <!-- Safari (macOS + iOS) -->
-              <!-- <source src="videos/bending_beam_safari.mp4" type="video/mp4; codecs=hvc1"> -->
-            </video>
-            <p class="video-caption">Sensor fusion deployment at an instrumented transport hub, capturing thermal, vibration, and lidar data streams used to calibrate the digital twin.</p>
+  <main class="home-page">
+    <section class="hero-banner" aria-label="Hero banner">
+      <div class="hero-banner-pattern" aria-hidden="true"></div>
+      <div class="hero-banner-content">
+        <div class="hero-profile-card">
+          <img src="images/mayank_profile.jpg" alt="Mayank Gupta" class="hero-profile-photo">
+          <h1>Mayank Gupta</h1>
+          <p class="hero-title">Research Scientist · Karlsruhe Institute of Technology</p>
+          <p class="hero-email"><a href="mailto:mayank.gupta@kit.edu">mayank.gupta@kit.edu</a></p>
+          <div class="hero-links">
+            <a href="https://github.com/githubmayankgupta" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/githubmayankgupta" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="cv.html" aria-label="Curriculum Vitae"><i class="fas fa-file-alt"></i></a>
           </div>
         </div>
-      </main>
+        <div class="hero-about">
+          <p class="research-eyebrow">About me</p>
+          <h2>Designing data-driven resilience for infrastructure systems</h2>
+          <p>My research blends physics-based simulation, machine learning, and collaborative sensing to detect emerging risks for structural and transportation assets. I work with open data practices to translate lab-scale insights into real-world priorities for communities and practitioners.</p>
+          <p>Alongside research, I lead collaborative sensing platforms and open-source tools that let engineers and citizens co-create resilient systems.</p>
+          <a class="download-bib" href="./files/citations.bib" download aria-label="Download bibliography (.bib)">Download Bibliography (.bib)</a>
+        </div>
+      </div>
+    </section>
 
-      <footer>
-        <p>© <span id="y"></span> Mayank Gupta. Built with GitHub Pages.</p>
-      </footer>
-    </div>
-  </div>
+    <section class="home-highlights">
+      <article class="feature-card">
+        <h3>Research Focus</h3>
+        <ul>
+          <li>Climate-adaptive digital twins that steer resilient decisions for transportation and energy corridors.</li>
+          <li>Physics-aware machine learning models that retain interpretability under sparse instrumentation.</li>
+          <li>Community-centered sensing platforms and open-source tools that invite collaboration across engineering teams.</li>
+        </ul>
+      </article>
+      <article class="feature-card">
+        <h3>Recent Highlights</h3>
+        <ul>
+          <li><strong>Climate-Adaptive Digital Twin for Resilient Transportation Infrastructure</strong><br><span>Data-Driven Infrastructure Systems Workshop, 2025</span></li>
+          <li><strong>Physics-aware Machine Learning for Predictive Monitoring of Urban Infrastructure</strong><br><span>Automation in Construction, 2024</span></li>
+        </ul>
+        <p class="feature-link">Explore more on the <a href="research.html">Research page</a>.</p>
+      </article>
+    </section>
+
+    <section class="video-panel">
+      <video id="hoverVideo" loop muted playsinline>
+        <source src="videos/bending_beam.webm" type="video/webm; codecs=vp9">
+      </video>
+      <p class="video-caption">Sensor fusion deployment at an instrumented transport hub, aligning thermal, vibration, and lidar streams to calibrate the digital twin.</p>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Mayank Gupta. Built with GitHub Pages.</p>
+    </footer>
+  </main>
 
   <script>
     // Minimal script for static pages: set year, highlight current nav entry, and keep mobile menu behavior
