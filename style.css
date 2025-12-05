@@ -623,6 +623,59 @@ body {
     }
 
     .publication-list {
+      width: min(1200px, 100% - 2rem);
+      margin: 0 auto 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .publication-group {
+      background: var(--white);
+      border-radius: 20px;
+      border: 1px solid rgba(11, 38, 59, 0.08);
+      padding: clamp(1.75rem, 3vw, 2.5rem);
+      box-shadow: 0 20px 35px rgba(15, 76, 129, 0.08);
+    }
+    .publication-group-header {
+      margin-bottom: 1.25rem;
+    }
+    .publication-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+      font-size: 0.78rem;
+      color: rgba(11, 38, 59, 0.7);
+      margin-bottom: 0.35rem;
+    }
+    .publication-group-header h2 {
+      margin: 0;
+      font-size: clamp(1.9rem, 3vw, 2.3rem);
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+    .publication-group-header p {
+      margin: 0.35rem 0 0;
+      color: var(--gray60);
+      max-width: 640px;
+    }
+    .publication-entries {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .publication-entry {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+    .publication-authors {
+      margin: 0 0 0.35rem;
+      color: var(--gray60);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    .publication-list {
       width: min(1100px, 100% - 2rem);
       display: grid;
       gap: 1.5rem;
