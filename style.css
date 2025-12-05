@@ -1,27 +1,28 @@
 :root {
-      --white: #ffffff;
-      --black: #404040;
-      --green: #00876C;
-      --blue: #4664aa;
-      --gray05: #f3f3f3;
-      --gray60: #666666;
-      --gray80: #333333;
-    }
-    /* Base styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      line-height: 1.6;
-      color: var(--black);
-      background: var(--gray05);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+  --sky: #e7f4ff;
+  --white: #ffffff;
+  --ink: #0b263b;
+  --teal: #0f4c81;
+  --pale: #b2d8f7;
+  --gray60: #5b6c7d;
+  --gray05: #dbeaf4;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--sky);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
     
     /* Header Navigation */
     .header-nav {
@@ -226,6 +227,57 @@
       border: 1px solid var(--gray05);
       width: 100%;
       box-sizing: border-box;
+    }
+    .hero {
+      background: var(--white);
+      border-radius: 14px;
+      border: 1px solid var(--gray05);
+      padding: 2rem;
+      box-shadow: 0 18px 45px rgba(15, 76, 129, 0.08);
+      margin-bottom: 2rem;
+    }
+    .hero-welcome {
+      font-size: 1rem;
+      letter-spacing: 0.4px;
+      color: var(--teal);
+      display: block;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+    }
+    .hero-layout {
+      display: grid;
+      grid-template-columns: minmax(180px, 220px) 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .hero-photo-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .hero-photo {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 4px solid var(--pale);
+      box-shadow: 0 14px 40px rgba(0, 70, 130, 0.15);
+    }
+    .hero-name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .hero-copy {
+      font-size: clamp(1rem, 1.5vw, 1.1rem);
+      color: var(--gray60);
+      line-height: 1.7;
+    }
+    .hero-tagline {
+      color: var(--ink);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
     .video-container {
       margin-bottom: 1.5rem;
