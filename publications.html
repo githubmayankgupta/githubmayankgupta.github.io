@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Research — Mayank Gupta</title>
-  <meta name="description" content="Selected publications and projects by Mayank Gupta, exploring data-driven infrastructure resilience." />
-  <link rel="canonical" href="https://githubmayankgupta.github.io/research.html" />
-  <meta property="og:title" content="Research — Mayank Gupta" />
-  <meta property="og:description" content="Selected publications and projects by Mayank Gupta, exploring data-driven infrastructure resilience." />
+  <title>Publications — Mayank Gupta</title>
+  <meta name="description" content="Selected publications by Mayank Gupta on data-driven infrastructure resilience." />
+  <link rel="canonical" href="https://githubmayankgupta.github.io/publications.html" />
+  <meta property="og:title" content="Publications — Mayank Gupta" />
+  <meta property="og:description" content="Selected publications by Mayank Gupta on data-driven infrastructure resilience." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://githubmayankgupta.github.io/research.html" />
+  <meta property="og:url" content="https://githubmayankgupta.github.io/publications.html" />
   <meta property="og:site_name" content="Mayank Gupta" />
   <meta name="author" content="Mayank Gupta" />
   <meta name="theme-color" content="#00876C" />
@@ -52,57 +52,34 @@
     </nav>
   </header>
 
-  <main class="research-page">
-    <section class="research-hero" aria-label="Research hero">
-      <div class="research-hero-media" role="presentation"></div>
-      <div class="research-hero-copy">
-        <p class="research-eyebrow">Research</p>
-        <h1>Data-driven resilience for infrastructure systems</h1>
-        <p>Mapping risk, instrumentation, and decision analytics to help engineers and communities safeguard bridges, transit networks, and energy corridors.</p>
+  <main class="publication-page">
+    <section class="publication-hero">
+      <div class="publication-hero-content">
+        <p class="research-eyebrow">Publications</p>
+        <h1>Research outputs that document resilient infrastructure systems</h1>
+        <p>Peer-reviewed work and field deployments tracing from digital twins and sensing platforms to conservation-focused data science.</p>
         <a class="download-bib" href="./files/citations.bib" download aria-label="Download bibliography (.bib)">Download Bibliography (.bib)</a>
       </div>
     </section>
 
-    <section class="research-content">
-      <article class="research-card research-interest">
-        <figure>
-          <img src="images/graphical_abstract_wildermannMULTIPHYSICSSIMULATIONCONCRETE2025.png" alt="Coastal infrastructure under study">
-          <figcaption>Instrumentation and simulations spanning coastal and inland structures.</figcaption>
-        </figure>
-        <div>
-          <h2>Research Interests</h2>
-          <p>My research explores conservation genetics of marine life with an applied focus on aquaculture and sustainable fishing in the U.S. This work blends population genomics, digital twins, and machine learning to detect emerging threats and translate lab-scale insights to real-world assets.</p>
-          <p>I aim to build interpretable, physics-aware models that remain robust under sparse data while empowering practitioners and communities through open-source sensing platforms and transparent dashboards.</p>
-        </div>
+    <section class="publication-list">
+      <article class="publication-entry">
+        <p class="publication-meta">2025 · Data-Driven Infrastructure Systems Workshop</p>
+        <h3>Climate-Adaptive Digital Twin for Resilient Transportation Infrastructure</h3>
+        <p>Co-designed digital twins that layer climate projections, sensor data, and community priorities so transit authorities can rapidly prioritize repairs.</p>
+        <a href="./files/citations.bib#guptaClimateAdaptiveDigitalTwins2025">View citation</a>
       </article>
-
-      <article class="research-card research-ongoing">
-        <div class="research-section-header">
-          <h2>Ongoing Research</h2>
-          <p>Selected projects shepherding experiments into resilient practice.</p>
-        </div>
-        <div class="ongoing-list">
-          <article class="ongoing-item">
-            <div class="ongoing-item-copy">
-              <h3>1. Population structure of the eastern oyster</h3>
-              <p>The eastern oyster is a linchpin of resilient estuarine ecosystems. My work merges genomics, habitat surveys, and collaborative sensing to reveal how breeding programs and restoration efforts shape connectivity across critical habitats.</p>
-            </div>
-            <figure>
-              <img src="images/graphical_abstract_wildermannProbabilisticServiceLife2025.png" alt="Oyster shell visualization">
-              <figcaption>Imaging and probabilistic models that guide restoration.</figcaption>
-            </figure>
-          </article>
-          <article class="ongoing-item">
-            <div class="ongoing-item-copy">
-              <h3>2. Quantifying oyster shell bioerosion with x-ray techniques</h3>
-              <p>Partnering with the Coastal Disease Ecology Lab to map microbial and physical weathering of shells. High-resolution x-ray imaging feeds physics-aware machine learning models that anticipate vulnerability and inform adaptive aquaculture strategies.</p>
-            </div>
-            <figure>
-              <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80" alt="Closeup of oyster shells">
-              <figcaption>X-ray inspired imagery meets open data.</figcaption>
-            </figure>
-          </article>
-        </div>
+      <article class="publication-entry">
+        <p class="publication-meta">2024 · Automation in Construction</p>
+        <h3>Physics-aware Machine Learning for Predictive Monitoring of Urban Infrastructure</h3>
+        <p>Interpretable models that blend structural health monitoring with mechanistic priors, improving early warning for bridges and tunnels under sparse instrumentation.</p>
+        <a href="./files/citations.bib#guptaPhysicsAwareMachineLearning2024">View citation</a>
+      </article>
+      <article class="publication-entry">
+        <p class="publication-meta">2023 · Journal of Infrastructure Systems</p>
+        <h3>Community-driven sensing dashboards for urban resilience</h3>
+        <p>A platform that fuses crowdsourced observations with infrastructure modeling to keep planners informed and foster dialogue across stakeholders.</p>
+        <a href="#">View citation</a>
       </article>
     </section>
 
@@ -112,7 +89,6 @@
   </main>
 
   <script>
-    // Minimal script for static pages: set year, highlight current nav entry, and keep mobile menu behavior
     function setYear() {
       const y = document.getElementById('y');
       if (y) y.textContent = new Date().getFullYear();
