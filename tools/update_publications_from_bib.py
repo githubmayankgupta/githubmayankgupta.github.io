@@ -12,7 +12,7 @@ HTML_FILE = ROOT / "publications.html"
 JOURNAL_TYPES = {"article", "book", "chapter", "mastersthesis", "phdthesis"}
 CONFERENCE_TYPES = {"inproceedings", "conference", "proceedings", "techreport"}
 
-ENTRY_TEMPLATE = """    <article class=\"publication-entry\">\n      <h3><a href=\"{link}\">{title}</a></h3>\n      <p class=\"publication-authors\">{authors}</p>\n      <p class=\"publication-meta\">{meta}</p>\n    </article>"""
+ENTRY_TEMPLATE = """    <article class=\"publication-entry\">\n      <h3><a href=\"{link}\" target=\"_blank\" rel=\"noopener noreferrer\">{title}</a></h3>\n      <p class=\"publication-authors\">{authors}</p>\n      <p class=\"publication-meta\">{meta}</p>\n    </article>"""
 
 
 def sanitize_title(text: str) -> str:
