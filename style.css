@@ -628,29 +628,9 @@ body {
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      background: transparent;
-      border: none;
-      padding: 0;
-      box-shadow: none;
-    }
-    section.publication-list {
-      background: transparent;
-      border: none;
-      border-radius: 0;
-      padding: 0;
-      margin-bottom: 0;
-      box-shadow: none;
-    }
-    section.publication-list:hover {
-      box-shadow: none;
     }
     .publication-group {
-      border-bottom: 1px solid rgba(15, 76, 129, 0.15);
       padding-bottom: clamp(1.5rem, 2.5vw, 2rem);
-    }
-    .publication-group:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
     }
     .publication-group-header {
       margin-bottom: 1rem;
@@ -706,40 +686,6 @@ body {
       letter-spacing: 0.35em;
       font-size: 0.85rem;
       text-transform: uppercase;
-    }
-
-    .publication-list {
-      width: min(1100px, 100% - 2rem);
-      display: grid;
-      gap: 1.5rem;
-    }
-    .publication-entry {
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 18px;
-      padding: clamp(1.75rem, 3vw, 2.25rem);
-      box-shadow: 0 15px 45px rgba(11, 38, 59, 0.12);
-      border: 1px solid rgba(11, 38, 59, 0.05);
-    }
-    .publication-meta {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.4em;
-      color: var(--gray60);
-      margin-bottom: 0.4rem;
-    }
-    .publication-entry h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1.5rem;
-      color: var(--ink);
-    }
-    .publication-entry p {
-      margin: 0 0 0.75rem;
-      color: var(--gray80);
-      line-height: 1.6;
-    }
-    .publication-entry a {
-      color: var(--blue);
-      font-weight: 600;
     }
 
     @media (max-width: 900px) {
@@ -802,6 +748,25 @@ body {
     }
     section:hover {
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    section.publication-list {
+      background: transparent;
+      border: none;
+      padding: 0;
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+    .publication-list {
+      width: min(1200px, 100% - 2rem);
+      margin: 0 auto 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background: var(--white);
+      border: 1px solid rgba(11, 38, 59, 0.08);
+      border-radius: 28px;
+      padding: clamp(2rem, 3vw, 2.75rem);
+      box-shadow: 0 25px 45px rgba(11, 38, 59, 0.12);
     }
     h2 {
       font-size: clamp(1.3rem, 3vw, 1.5rem);
