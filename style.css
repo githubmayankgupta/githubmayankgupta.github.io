@@ -633,6 +633,17 @@ body {
       padding: 0;
       box-shadow: none;
     }
+    section.publication-list {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+    section.publication-list:hover {
+      box-shadow: none;
+    }
     .publication-group {
       border-bottom: 1px solid rgba(15, 76, 129, 0.15);
       padding-bottom: clamp(1.5rem, 2.5vw, 2rem);
