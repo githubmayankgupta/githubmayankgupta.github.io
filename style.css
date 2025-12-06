@@ -1017,16 +1017,21 @@ body {
     }
     .supervision-grid .masters-photo {
       margin: 0;
-      width: 110px;
+      width: 180px;
+      height: 220px;
       flex-shrink: 0;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .supervision-grid .masters-photo img {
       width: 100%;
-      border-radius: 14px;
+      height: 180px;
+      border-radius: 18px;
       display: block;
       object-fit: cover;
-      box-shadow: 0 12px 25px rgba(15, 76, 129, 0.2);
+      box-shadow: 0 16px 30px rgba(15, 76, 129, 0.25);
     }
     .supervision-grid .masters-photo figcaption {
       margin-top: 0.6rem;
