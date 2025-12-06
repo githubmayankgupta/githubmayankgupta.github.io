@@ -12,7 +12,7 @@ HTML_FILE = ROOT / "publications.html"
 JOURNAL_TYPES = {"article", "book", "chapter", "mastersthesis", "phdthesis"}
 CONFERENCE_TYPES = {"inproceedings", "conference", "proceedings", "techreport"}
 
-ENTRY_TEMPLATE = """    <article class=\"publication-entry\">\n      <h3><a href=\"./files/citations.bib#{key}\">{title}</a></h3>\n      <p class=\"publication-authors\">{authors}</p>\n      <p class=\"publication-meta\">{meta}</p>\n    </article>"""
+ENTRY_TEMPLATE = """    <article class=\"publication-entry\">\n      <h3><a href=\"{link}\">{title}</a></h3>\n      <p class=\"publication-authors\">{authors}</p>\n      <p class=\"publication-meta\">{meta}</p>\n    </article>"""
 
 
 def sanitize_title(text: str) -> str:
@@ -34,6 +34,15 @@ def build_meta(entry: dict) -> str:
     return " · ".join(parts)
 
 
+def build_entry_link(entry: dict) -> str:
+    doi = entry.get("doi") or entry.get("DOI")
+    if doi:
+        doi = doi.strip().lstrip("https://doi.org/")
+        return f"https://doi.org/{doi}"
+    key = entry.get("ID") or entry.get("key") or ""
+    return f"./files/citations.bib#{key}" if key else "#"
+
+
 def generate_entries(entries: list[dict], key_filter: str) -> str:
     items = []
     for entry in entries:
@@ -45,8 +54,9 @@ def generate_entries(entries: list[dict], key_filter: str) -> str:
             anchor = entry.get("key") or ""
         if not anchor:
             continue
+        link = build_entry_link(entry)
         items.append(
-            ENTRY_TEMPLATE.format(key=anchor, title=title, authors=authors, meta=meta)
+            ENTRY_TEMPLATE.format(link=link, title=title, authors=authors, meta=meta)
         )
     return "\n".join(items)
 

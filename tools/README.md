@@ -30,7 +30,7 @@ Recommendations
 Publication updates
 -------------------
 
-- Add or edit citations in `files/citations.bib`.
+- Add or edit citations in `files/citations.bib`. Include a `doi` field for each paper so the generated links point directly to the journal or proceedings page.
 - Install the BibTeX parser if you haven't already:
   ````
   pip install bibtexparser
