@@ -628,6 +628,10 @@ body {
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      background: transparent;
+      border: none;
+      padding: 0;
+      box-shadow: none;
     }
     .publication-group {
       border-bottom: 1px solid rgba(15, 76, 129, 0.15);
