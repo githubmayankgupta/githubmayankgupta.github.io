@@ -26,3 +26,21 @@ Recommendations
 - For local, predictable generation use the Pillow-only script.
 - If you need exact SVG rasterization (fonts, filters), try
   `generate_favicons_cairosvg.py` inside a fresh conda environment.
+
+Publication updates
+-------------------
+
+- Add or edit citations in `files/citations.bib`.
+- Install the BibTeX parser if you haven't already:
+  ````
+  pip install bibtexparser
+  ````
+- Rebuild the publications page with:
+  ```
+  cd githubmayankgupta.github.io
+  python tools/update_publications_from_bib.py
+  ```
+
+  This writes updated journal and conference blocks inside `publications.html` between
+  `<!-- BIBTEX_*_START -->` and `<!-- BIBTEX_*_END -->` markers, so you never have to
+  manually copy entries into the HTML.
