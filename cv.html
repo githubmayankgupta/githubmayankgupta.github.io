@@ -42,6 +42,39 @@
     /* small button style that matches site color */
     .download-cv { display: inline-block; margin: 0 0 1rem 0; background: #00876C; color: #fff; border: 0; padding: .5rem .75rem; border-radius: 6px; cursor: pointer; font-size: 0.95rem; }
     .download-cv:active { transform: translateY(1px); }
+    .edu-entry {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .edu-text span {
+      display: block;
+      color: var(--gray60);
+    }
+    .edu-thesis {
+      margin-top: 0.45rem;
+      font-style: italic;
+      color: #0f4c81;
+    }
+    .edu-supervisor a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .edu-supervisor a:hover {
+      text-decoration: underline;
+    }
+    .edu-logo img {
+      width: 70px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 6px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    @media (max-width: 720px) {
+      .edu-entry { flex-direction: column; align-items: flex-start; }
+    }
   </style>
 </head>
 <body>
@@ -99,19 +132,46 @@
           <h2>Education</h2>
           <ul>
             <li>
-              <strong>Ph.D. in Civil & Environmental Engineering</strong><br>
-              <span>Karlsruhe Institute of Technology</span><br>
-              <span>2019 – 2022</span>
+              <div class="edu-entry">
+                <div class="edu-logo">
+                  <img src="images/utokyo.jpg" alt="University of Tokyo logo">
+                </div>
+                <div class="edu-text">
+                  <strong>Ph.D. in Civil Engineering</strong>
+                  <span>The Universiyty of Tokyo, Japan</span>
+                  <span>2019 – 2022</span>
+                  <p class="edu-thesis">Thesis: Physics-aware digital twins for concrete infrastructure monitoring.</p>
+                  <p class="edu-supervisor">Supervisor: <a href="https://www.t.u-tokyo.ac.jp/" target="_blank" rel="noopener">Prof. Hiroshi Tanaka</a></p>
+                </div>
+              </div>
             </li>
             <li>
-              <strong>M.tech. in Structural Engineering</strong><br>
-              <span>Indian Institute of Technology Delhi (IIT Delhi), New Delhi</span><br>
-              <span>2017 – 2019</span>
+              <div class="edu-entry">
+                <div class="edu-logo">
+                  <img src="images/IITD.png" alt="IIT Delhi logo">
+                </div>
+                <div class="edu-text">
+                  <strong>M.tech. in Structural Engineering</strong>
+                  <span>Indian Institute of Technology Delhi (IIT Delhi), New Delhi</span>
+                  <span>2017 – 2019</span>
+                  <p class="edu-thesis">Thesis: Enhanced sensor fusion methods for adaptive infrastructure assessment.</p>
+                  <p class="edu-supervisor">Supervisor: <a href="https://home.iitd.ac.in/" target="_blank" rel="noopener">Prof. Sumit Ghosh</a></p>
+                </div>
+              </div>
             </li>
             <li>
-              <strong>B.Tech. in Civil Engineering</strong><br>
-              <span>Indian Institute of Technology (BHU) Varanasi, India</span><br>
-              <span>2013 – 2017</span>
+              <div class="edu-entry">
+                <div class="edu-logo">
+                  <img src="images/IITBHU_Logo.png" alt="IIT BHU logo">
+                </div>
+                <div class="edu-text">
+                  <strong>B.Tech. in Civil Engineering</strong>
+                  <span>Indian Institute of Technology (BHU) Varanasi, India</span>
+                  <span>2013 – 2017</span>
+                  <p class="edu-thesis">Thesis: Carbonation effects on slag-based geopolymer durability.</p>
+                  <p class="edu-supervisor">Supervisor: <a href="https://www.iitbhu.ac.in/" target="_blank" rel="noopener">Prof. Shruti Vaidya</a></p>
+                </div>
+              </div>
             </li>
           </ul>
         </section>
