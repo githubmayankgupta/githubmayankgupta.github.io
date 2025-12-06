@@ -44,9 +44,15 @@
     .download-cv:active { transform: translateY(1px); }
     .edu-entry {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 1.5rem;
+    }
+    .edu-text {
+      flex: 1;
+    }
+    .edu-logo {
+      flex: 0 0 90px;
     }
     .edu-text span {
       display: block;
@@ -69,8 +75,15 @@
       width: 70px;
       height: auto;
       object-fit: contain;
-      border-radius: 6px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      border-radius: 40px;
+      border: 1px solid rgba(77, 96, 116, 0.2);
+      background: var(--sky);
+      padding: 6px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .edu-logo img:hover {
+      transform: scale(1.03);
+      border-color: rgba(77, 96, 116, 0.5);
     }
     @media (max-width: 720px) {
       .edu-entry { flex-direction: column; align-items: flex-start; }
@@ -140,8 +153,8 @@
                   <strong>Ph.D. in Civil Engineering</strong>
                   <span>The Universiyty of Tokyo, Japan</span>
                   <span>2019 – 2022</span>
-                  <p class="edu-thesis">Thesis: Physics-aware digital twins for concrete infrastructure monitoring.</p>
-                  <p class="edu-supervisor">Supervisor: <a href="https://www.t.u-tokyo.ac.jp/" target="_blank" rel="noopener">Prof. Hiroshi Tanaka</a></p>
+                  <p class="edu-thesis">Thesis: Study on mechanical properties and multiscale expansion modelling for concrete with expansive additives under different restraint conditions using Poro-mechanics.</p>
+                  <p class="edu-supervisor">Supervisor: <a href="https://concrete.t.u-tokyo.ac.jp/mem/ishi/en/" target="_blank" rel="noopener">Prof. Tetsuya Ishida</a></p>
                 </div>
               </div>
             </li>
@@ -154,8 +167,8 @@
                   <strong>M.tech. in Structural Engineering</strong>
                   <span>Indian Institute of Technology Delhi (IIT Delhi), New Delhi</span>
                   <span>2017 – 2019</span>
-                  <p class="edu-thesis">Thesis: Enhanced sensor fusion methods for adaptive infrastructure assessment.</p>
-                  <p class="edu-supervisor">Supervisor: <a href="https://home.iitd.ac.in/" target="_blank" rel="noopener">Prof. Sumit Ghosh</a></p>
+                  <p class="edu-thesis">Thesis: Multiscale modeling of strength of concrete using analytical homogenisation and damage mechanics.</p>
+                  <p class="edu-supervisor">Supervisor: <a href="https://web.iitd.ac.in/~bishnoi/" target="_blank" rel="noopener">Prof. Shashank Bishnoi</a></p>
                 </div>
               </div>
             </li>
@@ -168,8 +181,8 @@
                   <strong>B.Tech. in Civil Engineering</strong>
                   <span>Indian Institute of Technology (BHU) Varanasi, India</span>
                   <span>2013 – 2017</span>
-                  <p class="edu-thesis">Thesis: Carbonation effects on slag-based geopolymer durability.</p>
-                  <p class="edu-supervisor">Supervisor: <a href="https://www.iitbhu.ac.in/" target="_blank" rel="noopener">Prof. Shruti Vaidya</a></p>
+                  <p class="edu-thesis">Thesis: Determination of optimum mix design parameters for pervious concrete for adequate strength and permeability.</p>
+                  <p class="edu-supervisor">Supervisor: <a href="https://www.iitbhu.ac.in/dept/civ/faculty" target="_blank" rel="noopener">Prof. Veerendra Kumar</a></p>
                 </div>
               </div>
             </li>
