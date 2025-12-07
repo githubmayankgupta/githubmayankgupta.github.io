@@ -447,6 +447,27 @@ body {
       align-items: center;
       justify-content: center;
     }
+    .research-hero-title {
+      font-size: clamp(1.95rem, 3vw, 2.5rem);
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      max-width: min(640px, 90vw);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .research-hero-subhead {
+      font-size: clamp(1.3rem, 2.1vw, 1.75rem);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .research-hero p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.85);
+    }
     .research-hero-media {
       position: absolute;
       inset: 0;
@@ -467,23 +488,6 @@ body {
       text-transform: uppercase;
       font-size: 0.8rem;
       margin-bottom: 0.5rem;
-      color: rgba(255, 255, 255, 0.85);
-    }
-    .research-hero h1 {
-      font-size: clamp(2.4rem, 4vw, 3rem);
-      margin-bottom: 0.75rem;
-      letter-spacing: -0.02em;
-    }
-    .research-hero-subhead {
-      font-size: clamp(1.8rem, 3vw, 2.4rem);
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      margin: 0;
-      color: rgba(255, 255, 255, 0.92);
-    }
-    .research-hero p {
-      font-size: 1rem;
-      line-height: 1.6;
       color: rgba(255, 255, 255, 0.85);
     }
 
