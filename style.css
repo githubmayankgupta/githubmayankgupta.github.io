@@ -474,6 +474,13 @@ body {
       margin-bottom: 0.75rem;
       letter-spacing: -0.02em;
     }
+    .research-hero-subhead {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.92);
+    }
     .research-hero p {
       font-size: 1rem;
       line-height: 1.6;
